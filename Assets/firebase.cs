@@ -22,6 +22,7 @@ public class firebase : MonoBehaviour {
 		DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
 		reference.Child("position").Child("x").SetValueAsync(transform.position.x);
 		reference.Child("position").Child("y").SetValueAsync(transform.position.y);
+		reference.Child("position").Child("z").SetValueAsync(transform.position.z);
 		
 	}
 }
